@@ -6,7 +6,9 @@
 
 ### Locação de maquinários com seguro integrado
 
-**Gestão Ágil** · Projeto com Scrum em 4 sprints · Trabalho em grupo · UNICID 2026
+**Gestão Ágil** · Prof. Alexandre Carrocine · 2º semestre · UNICID 2026
+
+<sub>Projeto com Scrum · 4 sprints · Trabalho em grupo</sub>
 
 [![Site](https://img.shields.io/badge/Site-alugaforte.netlify.app-F5A623?style=for-the-badge)](https://alugaforte.netlify.app)
 [![Documentação](https://img.shields.io/badge/Documentação-PDF-555555?style=for-the-badge)](docs/Documentacao_AlugaForte.pdf)
@@ -107,7 +109,7 @@ O protótipo está publicado em **[alugaforte.netlify.app](https://alugaforte.ne
 
 | Product Owner | Scrum Master | Developers | Stakeholder |
 |:---:|:---:|:---:|:---:|
-| Kauã Justino da Silva | Mateus Alves dos Santos | Os 10 integrantes | Professor |
+| Kauã Justino da Silva | Mateus Alves dos Santos | Os 10 integrantes | Prof. Alexandre Carrocine |
 
 > **Product Goal:** alugar maquinário pela internet, com seguro integrado e custo transparente.
 
