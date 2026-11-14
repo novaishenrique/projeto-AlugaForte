@@ -1,19 +1,23 @@
 <div align="center">
 
+<img src=".github/capa.jpg" alt="AlugaForte: locação de maquinários com seguro integrado" width="100%">
+
 # AlugaForte
 
 ### Locação de maquinários com seguro integrado
 
-[![Acessar o site](https://img.shields.io/badge/Acessar_o_site-alugaforte.netlify.app-FFC107?style=for-the-badge)](https://alugaforte.netlify.app)
+**Gestão Ágil** · Projeto com Scrum em 4 sprints · Trabalho em grupo · UNICID 2026
 
+[![Site](https://img.shields.io/badge/Site-alugaforte.netlify.app-F5A623?style=for-the-badge)](https://alugaforte.netlify.app)
+[![Documentação](https://img.shields.io/badge/Documentação-PDF-555555?style=for-the-badge)](docs/Documentacao_AlugaForte.pdf)
+
+[![CI](https://github.com/novaishenrique/projeto-AlugaForte/actions/workflows/ci.yml/badge.svg)](https://github.com/novaishenrique/projeto-AlugaForte/actions/workflows/ci.yml)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white)
-![Scrum](https://img.shields.io/badge/Metodologia-Scrum-222222?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Prot%C3%B3tipo%20acad%C3%AAmico-FFC107?style=flat-square)
-
-**UNICID – Universidade Cidade de São Paulo** · Curso de Gestão Ágil · São Paulo, 2026
+![Scrum](https://img.shields.io/badge/Metodologia-Scrum-0B1437?style=flat-square)
+![BPMN e UML](https://img.shields.io/badge/Modelagem-BPMN_%C2%B7_UML-F5A623?style=flat-square)
 
 </div>
 
@@ -33,6 +37,8 @@
 - [Gestão de riscos](#gestão-de-riscos)
 - [Protótipo](#protótipo)
 - [Conclusão](#conclusão)
+- [Estrutura do repositório](#estrutura-do-repositório)
+- [Como executar](#como-executar)
 - [Referências](#referências)
 
 ---
@@ -85,6 +91,10 @@ Essa regra se justifica pelos seguintes motivos:
 O protótipo está publicado em **[alugaforte.netlify.app](https://alugaforte.netlify.app)**.
 
 **Fluxo principal:** Ferramenta → Período → Entrega e pagamento → Resumo com seguro
+
+| Catálogo de ferramentas | Simulação com seguro |
+|:---:|:---:|
+| <img src="imagens/site-inicio.png" alt="Página inicial do AlugaForte, com o catálogo filtrado por porte" width="420"> | <img src="imagens/site-simulacao.png" alt="Simulação da locação de uma mini escavadeira, com o resumo e o seguro obrigatório" width="420"> |
 
 > [!NOTE]
 > O AlugaForte é um protótipo acadêmico, sem integração com pagamentos reais: as opções de pagamento e a finalização da locação servem apenas para demonstrar o fluxo proposto.
@@ -459,6 +469,9 @@ Uma das principais dificuldades foi organizar as funcionalidades e fazer os cál
 
 O resultado do desenvolvimento é demonstrado com o site em funcionamento, percorrendo a página inicial, o catálogo de equipamentos e a simulação de locação.
 
+> [!IMPORTANT]
+> **Diferença entre o protótipo e a regra documentada:** o site publicado ainda cobra um seguro fixo de R$ 50,00 por locação quando a diária passa de R$ 500,00 e não oferece o seguro opcional. A regra da documentação (4% sobre o aluguel de R$ 500,00 a R$ 999,99, 7% a partir de R$ 1.000,00 e seguro opcional abaixo de R$ 500,00) é a que vale para o MVP e entra na próxima versão do site.
+
 ---
 
 ## Conclusão
@@ -482,6 +495,43 @@ O protótipo publicado na internet demonstra a viabilidade da proposta, embora, 
 
 ---
 
+## Estrutura do repositório
+
+```
+.
+├── site/
+│   └── index.html                 ← o protótipo (HTML, CSS e JavaScript em um arquivo)
+├── docs/
+│   └── Documentacao_AlugaForte.pdf  ← documentação técnica e acadêmica (ABNT)
+├── imagens/                       ← diagramas UML e BPMN e telas do site usados neste README
+├── .github/
+│   ├── capa.jpg                   ← capa deste README
+│   ├── tests/repo.test.js         ← testes automáticos
+│   └── workflows/ci.yml           ← roda os testes a cada push
+└── README.md
+```
+
+O `site/index.html` é o mesmo arquivo publicado no Netlify.
+
+---
+
+## Como executar
+
+O site não precisa de instalação nem de servidor:
+
+1. Baixe o repositório (**Code → Download ZIP**) ou clone com `git clone https://github.com/novaishenrique/projeto-AlugaForte.git`.
+2. Abra `site/index.html` no navegador.
+
+**Testes automáticos** (Node 20 ou mais novo):
+
+```bash
+node --test .github/tests/*.test.js
+```
+
+Eles conferem os links e imagens do README, a sintaxe do JavaScript, se todo botão chama uma função que existe e se o catálogo tem os três portes.
+
+---
+
 ## Referências
 
 - BRASIL. Lei nº 13.709, de 14 de agosto de 2018. Lei Geral de Proteção de Dados Pessoais (LGPD). Brasília, DF: Presidência da República, 2018.
@@ -494,6 +544,6 @@ O protótipo publicado na internet demonstra a viabilidade da proposta, embora, 
 
 <div align="center">
 
-Feito pela equipe AlugaForte · Gestão Ágil · UNICID 2026
+<sub>AlugaForte · Gestão Ágil · Gestão da Tecnologia da Informação · UNICID 2026</sub>
 
 </div>
